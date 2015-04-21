@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PQStickerTableViewCell.h
 //  FBStickerCrawler
 //
 //  Created by Le Thai Phuc Quang on 4/10/15.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class PQSticker;
 
-@interface ViewController : UIViewController
-
-
+@interface PQStickerTableViewCell : UITableViewCell
+- (void)configCellUsingSticker:(PQSticker *)sticker;
 @end
-

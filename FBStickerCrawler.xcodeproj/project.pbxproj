@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		6F6ADBB41AD7A01100A4D8D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBB31AD7A01100A4D8D3 /* main.m */; };
 		6F6ADBB71AD7A01100A4D8D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBB61AD7A01100A4D8D3 /* AppDelegate.m */; };
-		6F6ADBBA1AD7A01100A4D8D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBB91AD7A01100A4D8D3 /* ViewController.m */; };
 		6F6ADBBD1AD7A01100A4D8D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6ADBBB1AD7A01100A4D8D3 /* Main.storyboard */; };
 		6F6ADBBF1AD7A01100A4D8D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F6ADBBE1AD7A01100A4D8D3 /* Images.xcassets */; };
 		6F6ADBC21AD7A01100A4D8D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F6ADBC01AD7A01100A4D8D3 /* LaunchScreen.xib */; };
 		6F6ADBCE1AD7A01100A4D8D3 /* FBStickerCrawlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBCD1AD7A01100A4D8D3 /* FBStickerCrawlerTests.m */; };
+		6F6ADBDB1AD7A10000A4D8D3 /* PQParsingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBDA1AD7A10000A4D8D3 /* PQParsingService.m */; };
+		6F6ADBDE1AD7A10E00A4D8D3 /* PQRequestingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBDD1AD7A10E00A4D8D3 /* PQRequestingService.m */; };
+		6F6ADBE11AD7A12000A4D8D3 /* PQSticker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBE01AD7A12000A4D8D3 /* PQSticker.m */; };
+		6F6ADBE41AD7A13500A4D8D3 /* PQStickerPack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBE31AD7A13500A4D8D3 /* PQStickerPack.m */; };
+		6F6ADBE81AD7A17F00A4D8D3 /* PQStickerPackListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBE71AD7A17F00A4D8D3 /* PQStickerPackListTableViewController.m */; };
+		6F6ADBEB1AD7A22700A4D8D3 /* PQStickerListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBEA1AD7A22700A4D8D3 /* PQStickerListTableViewController.m */; };
+		6F6ADBEE1AD7C17300A4D8D3 /* PQUrlService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBED1AD7C17300A4D8D3 /* PQUrlService.m */; };
+		6F6ADC241AD806E500A4D8D3 /* PQStickerPackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADC231AD806E500A4D8D3 /* PQStickerPackTableViewCell.m */; };
+		6F6ADC271AD807A200A4D8D3 /* PQStickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADC261AD807A200A4D8D3 /* PQStickerTableViewCell.m */; };
+		6FDDEC9A1AE5F6EF009FA543 /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDEC991AE5F6EF009FA543 /* UIImage+Sprite.m */; };
+		A9504A68C5E469F24675F505 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 486C6B12C1EA6EC261956300 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +37,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		486C6B12C1EA6EC261956300 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6ADBAE1AD7A01100A4D8D3 /* FBStickerCrawler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBStickerCrawler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6ADBB21AD7A01100A4D8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F6ADBB31AD7A01100A4D8D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F6ADBB51AD7A01100A4D8D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6F6ADBB61AD7A01100A4D8D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6F6ADBB81AD7A01100A4D8D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6F6ADBB91AD7A01100A4D8D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6F6ADBBC1AD7A01100A4D8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F6ADBBE1AD7A01100A4D8D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6F6ADBC11AD7A01100A4D8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6F6ADBC71AD7A01100A4D8D3 /* FBStickerCrawlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBStickerCrawlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6ADBCC1AD7A01100A4D8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F6ADBCD1AD7A01100A4D8D3 /* FBStickerCrawlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBStickerCrawlerTests.m; sourceTree = "<group>"; };
+		6F6ADBD91AD7A10000A4D8D3 /* PQParsingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQParsingService.h; path = Helpers/PQParsingService.h; sourceTree = "<group>"; };
+		6F6ADBDA1AD7A10000A4D8D3 /* PQParsingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQParsingService.m; path = Helpers/PQParsingService.m; sourceTree = "<group>"; };
+		6F6ADBDC1AD7A10E00A4D8D3 /* PQRequestingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQRequestingService.h; path = Helpers/PQRequestingService.h; sourceTree = "<group>"; };
+		6F6ADBDD1AD7A10E00A4D8D3 /* PQRequestingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQRequestingService.m; path = Helpers/PQRequestingService.m; sourceTree = "<group>"; };
+		6F6ADBDF1AD7A12000A4D8D3 /* PQSticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQSticker.h; path = Models/PQSticker.h; sourceTree = "<group>"; };
+		6F6ADBE01AD7A12000A4D8D3 /* PQSticker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQSticker.m; path = Models/PQSticker.m; sourceTree = "<group>"; };
+		6F6ADBE21AD7A13500A4D8D3 /* PQStickerPack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQStickerPack.h; path = Models/PQStickerPack.h; sourceTree = "<group>"; };
+		6F6ADBE31AD7A13500A4D8D3 /* PQStickerPack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQStickerPack.m; path = Models/PQStickerPack.m; sourceTree = "<group>"; };
+		6F6ADBE61AD7A17F00A4D8D3 /* PQStickerPackListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQStickerPackListTableViewController.h; path = Controllers/PQStickerPackListTableViewController.h; sourceTree = "<group>"; };
+		6F6ADBE71AD7A17F00A4D8D3 /* PQStickerPackListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQStickerPackListTableViewController.m; path = Controllers/PQStickerPackListTableViewController.m; sourceTree = "<group>"; };
+		6F6ADBE91AD7A22700A4D8D3 /* PQStickerListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQStickerListTableViewController.h; path = Controllers/PQStickerListTableViewController.h; sourceTree = "<group>"; };
+		6F6ADBEA1AD7A22700A4D8D3 /* PQStickerListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQStickerListTableViewController.m; path = Controllers/PQStickerListTableViewController.m; sourceTree = "<group>"; };
+		6F6ADBEC1AD7C17300A4D8D3 /* PQUrlService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQUrlService.h; path = Helpers/PQUrlService.h; sourceTree = "<group>"; };
+		6F6ADBED1AD7C17300A4D8D3 /* PQUrlService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQUrlService.m; path = Helpers/PQUrlService.m; sourceTree = "<group>"; };
+		6F6ADC221AD806E500A4D8D3 /* PQStickerPackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQStickerPackTableViewCell.h; path = Controllers/Cells/PQStickerPackTableViewCell.h; sourceTree = "<group>"; };
+		6F6ADC231AD806E500A4D8D3 /* PQStickerPackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQStickerPackTableViewCell.m; path = Controllers/Cells/PQStickerPackTableViewCell.m; sourceTree = "<group>"; };
+		6F6ADC251AD807A200A4D8D3 /* PQStickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQStickerTableViewCell.h; path = Controllers/Cells/PQStickerTableViewCell.h; sourceTree = "<group>"; };
+		6F6ADC261AD807A200A4D8D3 /* PQStickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQStickerTableViewCell.m; path = Controllers/Cells/PQStickerTableViewCell.m; sourceTree = "<group>"; };
+		6FDDEC981AE5F6EF009FA543 /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
+		6FDDEC991AE5F6EF009FA543 /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
+		737B6BD40FD94ED6EEF4127B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FBFCB522AEA9526018477A6E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9504A68C5E469F24675F505 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A87AE1DFD5B368DBBA6550D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				486C6B12C1EA6EC261956300 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6F6ADBA51AD7A01100A4D8D3 = {
 			isa = PBXGroup;
 			children = (
 				6F6ADBB01AD7A01100A4D8D3 /* FBStickerCrawler */,
 				6F6ADBCA1AD7A01100A4D8D3 /* FBStickerCrawlerTests */,
 				6F6ADBAF1AD7A01100A4D8D3 /* Products */,
+				DD57012BC90111F2FA9602F2 /* Pods */,
+				3A87AE1DFD5B368DBBA6550D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +123,11 @@
 		6F6ADBB01AD7A01100A4D8D3 /* FBStickerCrawler */ = {
 			isa = PBXGroup;
 			children = (
+				6F6ADBE51AD7A14A00A4D8D3 /* Controllers */,
+				6F6ADBD81AD7A0E100A4D8D3 /* Helpers */,
+				6F6ADBD71AD7A0D900A4D8D3 /* Models */,
 				6F6ADBB51AD7A01100A4D8D3 /* AppDelegate.h */,
 				6F6ADBB61AD7A01100A4D8D3 /* AppDelegate.m */,
-				6F6ADBB81AD7A01100A4D8D3 /* ViewController.h */,
-				6F6ADBB91AD7A01100A4D8D3 /* ViewController.m */,
 				6F6ADBBB1AD7A01100A4D8D3 /* Main.storyboard */,
 				6F6ADBBE1AD7A01100A4D8D3 /* Images.xcassets */,
 				6F6ADBC01AD7A01100A4D8D3 /* LaunchScreen.xib */,
@@ -119,6 +162,64 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6F6ADBD71AD7A0D900A4D8D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F6ADBDF1AD7A12000A4D8D3 /* PQSticker.h */,
+				6F6ADBE01AD7A12000A4D8D3 /* PQSticker.m */,
+				6F6ADBE21AD7A13500A4D8D3 /* PQStickerPack.h */,
+				6F6ADBE31AD7A13500A4D8D3 /* PQStickerPack.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6F6ADBD81AD7A0E100A4D8D3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6FDDEC981AE5F6EF009FA543 /* UIImage+Sprite.h */,
+				6FDDEC991AE5F6EF009FA543 /* UIImage+Sprite.m */,
+				6F6ADBEC1AD7C17300A4D8D3 /* PQUrlService.h */,
+				6F6ADBED1AD7C17300A4D8D3 /* PQUrlService.m */,
+				6F6ADBD91AD7A10000A4D8D3 /* PQParsingService.h */,
+				6F6ADBDA1AD7A10000A4D8D3 /* PQParsingService.m */,
+				6F6ADBDC1AD7A10E00A4D8D3 /* PQRequestingService.h */,
+				6F6ADBDD1AD7A10E00A4D8D3 /* PQRequestingService.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		6F6ADBE51AD7A14A00A4D8D3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F6ADC211AD806BE00A4D8D3 /* Cells */,
+				6F6ADBE61AD7A17F00A4D8D3 /* PQStickerPackListTableViewController.h */,
+				6F6ADBE71AD7A17F00A4D8D3 /* PQStickerPackListTableViewController.m */,
+				6F6ADBE91AD7A22700A4D8D3 /* PQStickerListTableViewController.h */,
+				6F6ADBEA1AD7A22700A4D8D3 /* PQStickerListTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6F6ADC211AD806BE00A4D8D3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6F6ADC221AD806E500A4D8D3 /* PQStickerPackTableViewCell.h */,
+				6F6ADC231AD806E500A4D8D3 /* PQStickerPackTableViewCell.m */,
+				6F6ADC251AD807A200A4D8D3 /* PQStickerTableViewCell.h */,
+				6F6ADC261AD807A200A4D8D3 /* PQStickerTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		DD57012BC90111F2FA9602F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBFCB522AEA9526018477A6E /* Pods.debug.xcconfig */,
+				737B6BD40FD94ED6EEF4127B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F6ADBD11AD7A01100A4D8D3 /* Build configuration list for PBXNativeTarget "FBStickerCrawler" */;
 			buildPhases = (
+				986EF91EEB642FAB61E095D6 /* Check Pods Manifest.lock */,
 				6F6ADBAA1AD7A01100A4D8D3 /* Sources */,
 				6F6ADBAB1AD7A01100A4D8D3 /* Frameworks */,
 				6F6ADBAC1AD7A01100A4D8D3 /* Resources */,
+				7B2FAC1AA7BDED4898B647EC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +317,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B2FAC1AA7BDED4898B647EC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		986EF91EEB642FAB61E095D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F6ADBAA1AD7A01100A4D8D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F6ADBBA1AD7A01100A4D8D3 /* ViewController.m in Sources */,
+				6F6ADBE41AD7A13500A4D8D3 /* PQStickerPack.m in Sources */,
+				6F6ADC271AD807A200A4D8D3 /* PQStickerTableViewCell.m in Sources */,
 				6F6ADBB71AD7A01100A4D8D3 /* AppDelegate.m in Sources */,
+				6F6ADBEE1AD7C17300A4D8D3 /* PQUrlService.m in Sources */,
+				6F6ADBE11AD7A12000A4D8D3 /* PQSticker.m in Sources */,
 				6F6ADBB41AD7A01100A4D8D3 /* main.m in Sources */,
+				6F6ADBE81AD7A17F00A4D8D3 /* PQStickerPackListTableViewController.m in Sources */,
+				6F6ADC241AD806E500A4D8D3 /* PQStickerPackTableViewCell.m in Sources */,
+				6F6ADBDE1AD7A10E00A4D8D3 /* PQRequestingService.m in Sources */,
+				6F6ADBEB1AD7A22700A4D8D3 /* PQStickerListTableViewController.m in Sources */,
+				6FDDEC9A1AE5F6EF009FA543 /* UIImage+Sprite.m in Sources */,
+				6F6ADBDB1AD7A10000A4D8D3 /* PQParsingService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +490,7 @@
 		};
 		6F6ADBD21AD7A01100A4D8D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBFCB522AEA9526018477A6E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FBStickerCrawler/Info.plist;
@@ -355,6 +501,7 @@
 		};
 		6F6ADBD31AD7A01100A4D8D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 737B6BD40FD94ED6EEF4127B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FBStickerCrawler/Info.plist;
@@ -416,6 +563,7 @@
 				6F6ADBD31AD7A01100A4D8D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F6ADBD41AD7A01100A4D8D3 /* Build configuration list for PBXNativeTarget "FBStickerCrawlerTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +572,7 @@
 				6F6ADBD61AD7A01100A4D8D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
