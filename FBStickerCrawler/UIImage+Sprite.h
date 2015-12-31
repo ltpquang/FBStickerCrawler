@@ -56,4 +56,9 @@
 - (NSArray *)spritesWithSpriteSheetImage:(UIImage *)image
                              spriteCount:(NSInteger)count
                               spriteSize:(CGSize)size;
+
+- (NSArray *)spritesWithSpriteSheetImage:(UIImage *)image
+                             columnCount:(NSInteger)columnCount
+                                rowCount:(NSInteger)rowCount
+                             spriteCount:(NSInteger)spriteCount;
 @end

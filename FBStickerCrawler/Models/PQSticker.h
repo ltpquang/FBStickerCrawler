@@ -21,6 +21,8 @@
 @property NSString *sourceUri;
 @property NSString *spriteUri;
 @property NSString *paddedSpriteUri;
+@property NSArray *spriteArray;
+@property (nonatomic) BOOL hasImage;
 
 - (id)initWithId:(NSString *)objectId
         andWidth:(NSInteger)width

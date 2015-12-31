@@ -10,14 +10,23 @@
 
 @implementation PQUrlService
 + (NSString *)baseUrl {
-    return @"http://audeecon.herokuapp.com/api/v1/packs/";
+    return @"http://audeecon.herokuapp.com/api/v1/packs";
 }
 
 + (NSString *)urlToGetAllStickerPacks {
-    return [NSString stringWithFormat:@"%@", [self baseUrl]];
+    NSString *result = [NSString stringWithFormat:@"%@", [self baseUrl]];
+    NSLog(@"%@", result);
+    return result;
+}
+
++ (NSString *)urlToGetAllStickerPacksForUser:(NSString *)username {
+    return [NSString new];
 }
 
 + (NSString *)urlToGetStickerPackWithId:(NSString *)packId {
-    return [NSString stringWithFormat:@"%@/%@", [self urlToGetAllStickerPacks], packId];
+    //?size=240
+    NSString *result = [NSString stringWithFormat:@"%@/%@?size=240", [self urlToGetAllStickerPacks], packId];
+    NSLog(@"%@", result);
+    return result;
 }
 @end

@@ -74,6 +74,14 @@
     return nil;
 }
 
+- (NSArray *)spritesWithSpriteSheetImage:(UIImage *)image
+                             columnCount:(NSInteger)columnCount
+                                rowCount:(NSInteger)rowCount
+                             spriteCount:(NSInteger)spriteCount {
+    CGFloat spriteWidth = image.size.width/(CGFloat)columnCount;
+    CGFloat spriteHeight = image.size.height/(CGFloat)rowCount;
+    return [self spritesWithSpriteSheetImage:image spriteCount:spriteCount spriteSize:CGSizeMake(spriteWidth, spriteHeight)];
+}
 
 - (NSArray *)spritesWithSpriteSheetImage:(UIImage *)image
                                  inRange:(NSRange)range

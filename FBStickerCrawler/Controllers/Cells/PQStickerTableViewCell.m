@@ -27,9 +27,24 @@
     // Configure the view for the selected state
 }
 
+- (void)startLoadingIndicator:(BOOL)start {
+    if (start) {
+        [_loadingIndicator startAnimating];
+    }
+    else {
+        [_loadingIndicator stopAnimating];
+    }
+}
+
+- (void)resetContent {
+    _mainImage.image = nil;
+}
+
 - (void)configCellUsingSticker:(PQSticker *)sticker {
     _mainImage.image = nil;
-    [_loadingIndicator startAnimating];
+    CGRect frame = _mainImage.frame;
+    frame.size = CGSizeMake(sticker.width, sticker.height);
+    _mainImage.frame = frame;
     [sticker populateStickerToUIImageVIew:_mainImage
                                onComplete:^{
                                    [_loadingIndicator stopAnimating];

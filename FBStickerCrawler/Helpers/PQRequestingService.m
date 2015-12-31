@@ -59,8 +59,8 @@
        parameters:nil
           success:^(NSURLSessionDataTask *task, id responseObject) {
               //Parse result and call the call back
-              NSArray *stickers = (NSArray *)[(NSDictionary *)responseObject objectForKey:@"stickers"];
-              NSArray *result = [PQParsingService parseListOfStickersFromArray:stickers];
+              //NSArray *stickers = (NSArray *)[(NSDictionary *)responseObject objectForKey:@"stickers"];
+              NSArray *result = [PQParsingService parseListOfStickersFromArray:(NSArray *)responseObject];
               successCall(result);
           }
           failure:^(NSURLSessionDataTask *task, NSError *error) {

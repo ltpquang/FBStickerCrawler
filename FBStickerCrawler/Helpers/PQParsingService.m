@@ -37,7 +37,7 @@
 
 #pragma mark - Sticker
 + (PQSticker *)parseStickerFromDictionary:(NSDictionary *)sticker {
-    PQSticker *result = [[PQSticker alloc] initWithId:(NSString *)[sticker objectForKey:@"_id"]
+    PQSticker *result = [[PQSticker alloc] initWithId:(NSString *)[sticker objectForKey:@"sticker_id"]
                                              andWidth:[[sticker valueForKey:@"width"] integerValue]
                                             andHeight:[[sticker valueForKey:@"height"] integerValue]
                                         andFrameCount:[[sticker valueForKey:@"frame_count"] integerValue]

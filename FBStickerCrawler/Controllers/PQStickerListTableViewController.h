@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PQImageDownloader.h"
 @class PQStickerPack;
 
-@interface PQStickerListTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface PQStickerListTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, PQImageDownloaderDelegate>
 - (void)configUsingStickerPack:(PQStickerPack *)stickerPack;
 @end

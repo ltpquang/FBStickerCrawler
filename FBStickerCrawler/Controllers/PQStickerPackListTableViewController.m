@@ -46,6 +46,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     if (_stickerPacks.count != 0) return;
     [self start];
 }
@@ -147,18 +148,20 @@
 
 - (CGFloat)computePackDescriptionHeightWithText:(NSString *)description {
     
-    CGRect bound = [description boundingRectWithSize:CGSizeMake(_mainTableView.bounds.size.width, MAXFLOAT)
+    CGRect bound = [description boundingRectWithSize:CGSizeMake(_mainTableView.bounds.size.width - 28, MAXFLOAT)
                                              options:NSStringDrawingUsesLineFragmentOrigin
                                           attributes:@{NSFontAttributeName:[UIFont italicSystemFontOfSize:15.0]}
                                              context:nil];
-    return bound.size.height + 32;
+    return bound.size.height + 24;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat additional = 8 + _mainTableView.bounds.size.width*2/3 + 8 + 23 + 3 + 18 + 3 + 12;
+    
     NSArray *stickers = _isSearching ? _searchResultStickerPacks : _stickerPacks;
     CGFloat descriptionHeight = [self computePackDescriptionHeightWithText:[[stickers objectAtIndex:indexPath.row] packDescription]];
     //NSLog(@"%f", descriptionHeight + 270);
-    return descriptionHeight + 140;
+    return descriptionHeight + additional/2;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

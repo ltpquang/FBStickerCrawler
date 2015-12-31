@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1CD63C1B2A7EE30007B174 /* PQPendingOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CD63B1B2A7EE30007B174 /* PQPendingOperations.m */; };
+		6F1CD63F1B2A7FA30007B174 /* PQImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CD63E1B2A7FA30007B174 /* PQImageDownloader.m */; };
 		6F6ADBB41AD7A01100A4D8D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBB31AD7A01100A4D8D3 /* main.m */; };
 		6F6ADBB71AD7A01100A4D8D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBB61AD7A01100A4D8D3 /* AppDelegate.m */; };
 		6F6ADBBD1AD7A01100A4D8D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6ADBBB1AD7A01100A4D8D3 /* Main.storyboard */; };
@@ -22,6 +24,7 @@
 		6F6ADBEE1AD7C17300A4D8D3 /* PQUrlService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADBED1AD7C17300A4D8D3 /* PQUrlService.m */; };
 		6F6ADC241AD806E500A4D8D3 /* PQStickerPackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADC231AD806E500A4D8D3 /* PQStickerPackTableViewCell.m */; };
 		6F6ADC271AD807A200A4D8D3 /* PQStickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6ADC261AD807A200A4D8D3 /* PQStickerTableViewCell.m */; };
+		6F7CE4F81B2C221600C1B260 /* UIImageView+AnimationCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7CE4F71B2C221600C1B260 /* UIImageView+AnimationCompletion.m */; };
 		6FDDEC9A1AE5F6EF009FA543 /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDEC991AE5F6EF009FA543 /* UIImage+Sprite.m */; };
 		A9504A68C5E469F24675F505 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 486C6B12C1EA6EC261956300 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -38,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		486C6B12C1EA6EC261956300 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1CD63A1B2A7EE30007B174 /* PQPendingOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQPendingOperations.h; path = Models/PQPendingOperations.h; sourceTree = "<group>"; };
+		6F1CD63B1B2A7EE30007B174 /* PQPendingOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQPendingOperations.m; path = Models/PQPendingOperations.m; sourceTree = "<group>"; };
+		6F1CD63D1B2A7FA30007B174 /* PQImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQImageDownloader.h; path = Models/PQImageDownloader.h; sourceTree = "<group>"; };
+		6F1CD63E1B2A7FA30007B174 /* PQImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQImageDownloader.m; path = Models/PQImageDownloader.m; sourceTree = "<group>"; };
 		6F6ADBAE1AD7A01100A4D8D3 /* FBStickerCrawler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBStickerCrawler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6ADBB21AD7A01100A4D8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F6ADBB31AD7A01100A4D8D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,6 +74,8 @@
 		6F6ADC231AD806E500A4D8D3 /* PQStickerPackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQStickerPackTableViewCell.m; path = Controllers/Cells/PQStickerPackTableViewCell.m; sourceTree = "<group>"; };
 		6F6ADC251AD807A200A4D8D3 /* PQStickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQStickerTableViewCell.h; path = Controllers/Cells/PQStickerTableViewCell.h; sourceTree = "<group>"; };
 		6F6ADC261AD807A200A4D8D3 /* PQStickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQStickerTableViewCell.m; path = Controllers/Cells/PQStickerTableViewCell.m; sourceTree = "<group>"; };
+		6F7CE4F61B2C221600C1B260 /* UIImageView+AnimationCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AnimationCompletion.h"; sourceTree = "<group>"; };
+		6F7CE4F71B2C221600C1B260 /* UIImageView+AnimationCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AnimationCompletion.m"; sourceTree = "<group>"; };
 		6FDDEC981AE5F6EF009FA543 /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
 		6FDDEC991AE5F6EF009FA543 /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
 		737B6BD40FD94ED6EEF4127B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +174,10 @@
 		6F6ADBD71AD7A0D900A4D8D3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6F1CD63A1B2A7EE30007B174 /* PQPendingOperations.h */,
+				6F1CD63B1B2A7EE30007B174 /* PQPendingOperations.m */,
+				6F1CD63D1B2A7FA30007B174 /* PQImageDownloader.h */,
+				6F1CD63E1B2A7FA30007B174 /* PQImageDownloader.m */,
 				6F6ADBDF1AD7A12000A4D8D3 /* PQSticker.h */,
 				6F6ADBE01AD7A12000A4D8D3 /* PQSticker.m */,
 				6F6ADBE21AD7A13500A4D8D3 /* PQStickerPack.h */,
@@ -176,6 +189,8 @@
 		6F6ADBD81AD7A0E100A4D8D3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				6F7CE4F61B2C221600C1B260 /* UIImageView+AnimationCompletion.h */,
+				6F7CE4F71B2C221600C1B260 /* UIImageView+AnimationCompletion.m */,
 				6FDDEC981AE5F6EF009FA543 /* UIImage+Sprite.h */,
 				6FDDEC991AE5F6EF009FA543 /* UIImage+Sprite.m */,
 				6F6ADBEC1AD7C17300A4D8D3 /* PQUrlService.h */,
@@ -357,6 +372,7 @@
 			files = (
 				6F6ADBE41AD7A13500A4D8D3 /* PQStickerPack.m in Sources */,
 				6F6ADC271AD807A200A4D8D3 /* PQStickerTableViewCell.m in Sources */,
+				6F7CE4F81B2C221600C1B260 /* UIImageView+AnimationCompletion.m in Sources */,
 				6F6ADBB71AD7A01100A4D8D3 /* AppDelegate.m in Sources */,
 				6F6ADBEE1AD7C17300A4D8D3 /* PQUrlService.m in Sources */,
 				6F6ADBE11AD7A12000A4D8D3 /* PQSticker.m in Sources */,
@@ -364,8 +380,10 @@
 				6F6ADBE81AD7A17F00A4D8D3 /* PQStickerPackListTableViewController.m in Sources */,
 				6F6ADC241AD806E500A4D8D3 /* PQStickerPackTableViewCell.m in Sources */,
 				6F6ADBDE1AD7A10E00A4D8D3 /* PQRequestingService.m in Sources */,
+				6F1CD63F1B2A7FA30007B174 /* PQImageDownloader.m in Sources */,
 				6F6ADBEB1AD7A22700A4D8D3 /* PQStickerListTableViewController.m in Sources */,
 				6FDDEC9A1AE5F6EF009FA543 /* UIImage+Sprite.m in Sources */,
+				6F1CD63C1B2A7EE30007B174 /* PQPendingOperations.m in Sources */,
 				6F6ADBDB1AD7A10000A4D8D3 /* PQParsingService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

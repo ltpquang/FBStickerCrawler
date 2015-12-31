@@ -11,4 +11,6 @@
 
 @interface PQStickerTableViewCell : UITableViewCell
 - (void)configCellUsingSticker:(PQSticker *)sticker;
+- (void)startLoadingIndicator:(BOOL)start;
+- (void)resetContent;
 @end
